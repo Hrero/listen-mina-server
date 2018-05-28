@@ -1,0 +1,21 @@
+<!--个人中心-->
+<view class="home">
+  <view class="homeheadWrap">
+    <view class="homeHeadpic"><image mode="widthFix" src="/image/play.png"></image></view>
+    四大队
+  </view>
+
+  <view class="personalList">
+    <view class="personalView" bindtap="goMysubscriptions">
+      <image class="personIcon" mode="widthFix" src="/image/dingyue@3x.png"></image>
+      <text class="zhong">我的订阅</text>
+      <image class="personJt frsa" mode="widthFix" src="/image/tian6.png"></image>
+    </view>
+    <view class="personalView qq" bindtap="goMyculum">
+      <image class="personIcon as" mode="widthFix" src="/image/youhuiquan@3x.png"></image>
+      <text class="zhong">我的优惠券</text>
+      <image class="personJt frsa" mode="widthFix" src="/image/tian6.png"></image>
+    </view>
+  </view>
+
+</view>

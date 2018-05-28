@@ -1,0 +1,45 @@
+<!--首页-->
+<view class="wrapIndex">
+    <view class="title">因书明理 以慈怀道</view>
+    <view class="pic">
+        <image mode="widthFix" src="/image/dingyue@3x.png"></image>
+    </view>
+    <view class="always">243人已听</view>
+    <view class="nullMoney">免费领取</view>
+    <view class="Tuijian">
+        <view class="mianbook">
+            <image mode="widthFix" src="/image/dingyue@3x.png"></image>
+            <view>岛上书店</view>
+            <view>播放</view>
+        </view>
+        <view class="mianbook">
+            <image mode="widthFix" src="/image/dingyue@3x.png"></image>
+            <view>岛上书店</view>
+            <view>播放</view>
+        </view>
+        <view class="mianbook">
+            <image mode="widthFix" src="/image/dingyue@3x.png"></image>
+            <view>岛上书店</view>
+            <view>播放</view>
+        </view>
+    </view>
+    <view class="indexa">
+        <view class="indexList">
+            <repeat wx:for="{{dataJson}}" wx:for-item="item" >
+                <view class="indexListLabel bottom-color-c"  data-lidandread="{{item.lidandread}}" bindtap="Gocurriculum" >
+                    <view class="indexListLabelpic"><image data-lidandread="{{item.lidandread}}" src="{{item.src}}"></image></view>
+                    <view class="indexListLabelContent" data-lidandread="{{item.lidandread}}" >
+                        <view class="txt1" data-lidandread="{{item.lidandread}}">{{item.title}}</view>
+                        <view class="txt2 libr" data-lidandread="{{item.lidandread}}">{{item.dis}}</view>
+                        <view class="txt3" data-lidandread="{{item.lidandread}}">
+                            <view class="fl mar" data-lidandread="{{item.lidandread}}" >已更新{{item.date}}期</view>
+                            <view class="fl" data-lidandread="{{item.lidandread}}">{{item.dy}}人订阅</view>
+                            <view class="fr color-red" data-lidandread="{{item.lidandread}}">¥{{item.money}}</view>
+                        </view>
+                    </view>
+                </view>
+            </repeat>
+        </view>
+    </view>
+
+</view>

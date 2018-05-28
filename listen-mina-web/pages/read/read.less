@@ -1,0 +1,54 @@
+@import "../../common/index.less";
+.listenWrap{.size(100%,auto);font-size: 28rpx;color: rgb(51,51,51);
+  .lisdis{
+    .size(94%,auto);
+    padding: 3%;background: #ffffff;
+    .lisenimg{width: 22rpx;}
+    &>.lisdown{display: flex;justify-content: space-between;
+      &>.lisdownPic{display: flex;align-items: center;}
+    }
+  }
+  &>.audioModel{
+    .size(92%,auto);
+    padding: 4%;
+    background: #ffffff;
+    margin-top: 20rpx;
+
+    .body-view{
+      overflow: hidden;
+    }
+
+    .body-view view:nth-of-type(1) , .body-view view:nth-of-type(3){
+      width: 10%;
+      text-align: center;
+      margin-top: 12rpx;
+    }
+    .body-view view:nth-of-type(2) {
+      width: 80%;
+    }
+    .downBtn{
+      display: flex;
+      align-items: center;
+      margin-top: 30rpx;
+      view{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      view:nth-of-type(1) image,view:nth-of-type(3) image{
+        .size(37rpx,auto);
+      }
+      view:nth-of-type(2) image{
+        .size(90rpx,auto);
+      }
+    }
+  }
+  .downText{
+    font-size: 22rpx;
+    text-align: center;
+    line-height: 150rpx;
+    color: rgb(187,187,187);
+  }
+}
+

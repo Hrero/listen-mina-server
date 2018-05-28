@@ -1,0 +1,48 @@
+<view class="listenWrap">
+    <image mode="widthFix" src="/image/green_tri.png"></image>
+    <view class="lisdis">
+        <view>提问的根本目的是获得资讯、建议或想法。凡是限制他人自由和如实回答的问题都不可取。</view>
+        <view class="lisdown">
+            <view class="lisdownPic">
+                <image class="lisenimg" mode="widthFix" src="/image/green_tri.png"></image>
+                <view>33</view>
+            </view>
+            <view>
+                12-9
+            </view>
+        </view>
+    </view>
+
+    <view class="audioModel">
+
+        <view class="section section_gap">
+            <view class="body-view">
+                <view class="fl a"><text>{{currentProcess}}</text></view>
+                <view class="fl a">
+                    <slider
+                        bindchange="hanleSliderChange"
+                        min="0"
+                        max="{{sliderMax}}"
+                        value="{{sliderValue}}"
+                    />
+                </view>
+                <view class="fl a"><text>{{totalProcess}}</text></view>
+            </view>
+        </view>
+
+        <view class="downBtn">
+            <view>
+                <image class="btna" mode="widthFix" bindtap="onPrev" src="/image/green_tri.png"></image>
+            </view>
+            <view>
+                <image class="btna" mode="widthFix" bindtap="outlineOperation" src="/image/green_tri.png"></image>
+            </view>
+            <view>
+                <image class="btna" mode="widthFix" bindtap="onNext" src="/image/green_tri.png"></image>
+            </view>
+        </view>
+
+    </view>
+    <goindex></goindex>
+    <view class="downText">由草莓书院提供技术支持</view>
+</view>

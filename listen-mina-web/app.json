@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myculum/myculum",
+    "pages/subscriptions/subscriptions",
+    "pages/home/home",
+    "pages/curriculum/curriculum",
+    "pages/readcurriculum/readcurriculum",
+    "pages/choose/choose",
+    "pages/listen/listen",
+    "pages/read/read",
+    "pages/coupon/coupon"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "草莓书院",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/shouye@3x.png",
+      "selectedIconPath": "image/shouye1@3x.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/home/home",
+      "iconPath": "image/geren@3x.png",
+      "selectedIconPath": "image/geren1@3x.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
