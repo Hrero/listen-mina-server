@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let base = 'http://192.168.0.135:3000/api';
+let base = 'http://192.168.0.59:3000/api';
 
 let v = window.v;
 console.log(v,window.v)

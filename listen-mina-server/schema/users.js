@@ -8,7 +8,7 @@ var Users = new Schema({
 
 
     username    : String,      //用户名
-
+    password : String, //密码
     src : String,      //用户头像
 
     location : String      //地址
